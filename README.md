@@ -1,1 +1,3 @@
-# js-html-css-remaining-time-calc
+# Remaining Time Calculation
+
+![ScreenShot](assets/img/ss.png)

@@ -1,0 +1,121 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    outline: 0;
+}
+
+.row{
+    padding: 5px;
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.btn{
+    border: 0;
+    background: transparent;
+}
+
+.btn-primary{
+    background: rgb(3, 70, 255);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-warning{
+    background: rgb(255, 137, 3);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background: rgba(3, 70, 255,0.8);
+}
+
+.btn-large{
+    font-size: 18px;
+}
+
+.container{
+    width: 500px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+form{
+    background: #f9f9f9;
+    padding: 10px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+input[type=text].form-control,
+input[type=email].form-control,
+input[type=password].form-control,
+input[type=number].form-control{
+    padding: 5px 10px;
+}
+
+
+.top label{
+    padding: 5px;
+}
+
+.middle{
+    padding-top: 20px;
+}
+
+.result{
+    border: 1px solid rgb(3, 70, 255);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.hide{
+    display: none;
+}
+
+.info{
+    padding: 3px;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remaining time calculation</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- DENEME123456761 WAS HERE -->
+    
+    <div class="container">
+        <h1 class="text-center">Remaining Time Calculation</h1>
+
+        <div class="result hide">
+            <div class="row">
+                <b><span>Speed: </span></b> <span id="resSpeed"></span>
+            </div>
+            <div class="row">
+                <b><span>Size: </span></b> <span id="resSize"></span>
+            </div>
+            <div class="row">
+                <b><span id="resTime"></span></b>
+            </div>
+        </div>
+
+        <form action="" method="post" id="form" onreset="Reset();">
+            <div class="row top flex">
+                <label for="multipler">Multipler: </label>
+                <select name="multipler" id="multipler" class="form-control">
+                    <option value="1024">1024</option>
+                    <option value="1000">1000</option>
+                </select>
+            </div>
+            <div class="row middle flex">
+                
+                <div class="size flex flex-1 flex-direction-column">
+                    <div class="row">
+                        <label for="fileSize" class="info">File size</label>
+                        <input type="number" id="fileSize" name="fileSize" class="form-control" placeholder="File size..." required>
+                    </div>
+                    <div class="row">
+                        <select name="sizeType" id="sizeType" class="form-control">
+                            <option value="bit">bit</option>
+                            <option value="byte">Bytes</option>
+                            <option value="kb">KB (Kilobyte)</option>
+                            <option value="mb" selected>MB (Megabyte)</option>
+                            <option value="gb">GB (Gigabyte)</option>
+                            <option value="tb">TB (TeraByte)</option>
+                            <option value="pb">PB (PetaByte)</option>
+                            <option value="eb">EB (ExaByte)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="speed flex flex-1 flex-direction-column">
+                    <div class="row">
+                        <label for="speed" class="info">Transfer speed</label>
+                        <input type="number" id="speed" name="speed" class="form-control" placeholder="Transfer speed..." required>
+                    </div>
+                    <div class="row">
+                        <select name="speedType" id="speedType" class="form-control">
+                            <option value="bps">Bits/s (bps)</option>
+                            <option value="kbps">Kbit/s (kbps)</option>
+                            <option value="mbps" selected>Mbit/s (mbps)</option>
+                            <option value="gbps">Gbit/s (gbps)</option>
+                            <option value="bs">Bytes/s (B/s)</option>
+                            <option value="kbs">Kilobytes/s (KB/s)</option>
+                            <option value="mbs">Megabytes/s (MB/s)</option>
+                            <option value="gbs">Gigabytes/s (GB/s)</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row bottom text-center">
+                <input type="submit" value="Calculate" class="btn btn-primary btn-large">
+                <input type="reset" value="Reset" class="btn btn-warning btn-large hide">
+            </div>
+        </form>
+        <!-- <div>
+            <small>&copy; 2018 | Created by <b>@deneme123456761</b></small>
+        </div> -->
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
